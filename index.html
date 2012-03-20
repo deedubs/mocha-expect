@@ -1,0 +1,28 @@
+<html>
+ <head>
+
+   <title>Mocha/expect.js</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+   <script type="text/javascript" src="js/libs/jquery.js"></script>
+   <script type="text/javascript" src="js/libs/mocha.js"></script>
+   <script type="text/javascript" src="js/libs/expect.js"></script>
+   <link rel="stylesheet" href="css/mocha.css" type="text/css" media="screen" />
+   <script>
+     mocha.setup({
+         ui: 'bdd'
+       , timeout: 1500
+     });
+
+     (function($) {
+       $(function() {
+         mocha.run();
+       });
+     })(jQuery);
+   </script>
+   <script type="text/javascript" src="test.js"></script>
+ </head>
+ <body>
+   <div id="mocha"></div>
+ </body>
+</html>
